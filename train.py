@@ -26,14 +26,14 @@ if __name__ == '__main__':
     # 0. params
     class_names = ['正常', '违规']
 
-    epoch           = 2
-    lr              = 0.5           # learning rate
-    dim             = 100           # embedding dim
+    epoch           = 2             # epoch                         [50]
+    lr              = 0.5           # learning rate                 [0.01]
+    dim             = 100           # embedding dim                 [128]
     ws              = 5             # size of the context window
     minn            = 1             # min length of char ngram
     maxn            = 2             # max length of char ngram
     neg             = 4             # number of negative sampled
-    wordNgram       = 2             # max length of word ngram
+    wordNgram       = 2             # max length of word ngram      [3]
     loss            = 'softmax'     # loss function
     lrUpdateRate    = 50            # lr update rate
 
